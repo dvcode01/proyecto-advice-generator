@@ -6,7 +6,6 @@ const adviceBtn = document.querySelector('.advice__btn');
 eventListeners();
 function eventListeners(){
     adviceBtn.addEventListener('click', showAdvice);
-    document.addEventListener('DOMContentLoaded', showAdvice);
 }
 
 async function showAdvice(){
@@ -22,3 +21,5 @@ async function showAdvice(){
         console.log(error);
     }
 }
+
+showAdvice();

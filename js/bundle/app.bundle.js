@@ -11,7 +11,6 @@ var adviceBtn = document.querySelector('.advice__btn');
 eventListeners();
 function eventListeners() {
   adviceBtn.addEventListener('click', showAdvice);
-  document.addEventListener('DOMContentLoaded', showAdvice);
 }
 function showAdvice() {
   return _showAdvice.apply(this, arguments);
@@ -48,3 +47,4 @@ function _showAdvice() {
   }));
   return _showAdvice.apply(this, arguments);
 }
+showAdvice();
